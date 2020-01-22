@@ -34,16 +34,7 @@ int main()
 			}
 		}
 	}
-	for (int i = 0; i < 7; i++)
-	{
-		cout << choose[i] << "	";
-	}
-
-	cout << "\n當期獎號:	";
-	for (int i = 0; i < 7; i++)
-	{
-		cout << prize[i] << "	";
-	}
+	
 	for (int i = 0; i < 7; i++)
 	{
 		while (true)
@@ -84,7 +75,7 @@ int main()
 
 	for (int i = 0; i < 7; i++)			//兌獎
 	{
-		if (i==6)
+		if (choose[6] == prize[6])
 		{
 			specialNum = true;
 		}
